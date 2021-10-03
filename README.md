@@ -18,4 +18,4 @@ You must take the necessary steps yourself to obtain the access tokens and creat
     "access_token_secret": "XXX"
 }
 ```
-Python version before 3.4 are deprecated for this project.
+Python versions before 3.4 are deprecated for this project.

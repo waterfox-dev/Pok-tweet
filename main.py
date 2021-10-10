@@ -40,7 +40,7 @@ while connect :
                 toimage(pokemon_of_day.image_url)
 
                 media  = api.media_upload(f'{pokemon_of_day.id}.png')
-                tweet = f"Le pokémon du jour est {pokemon_of_day.name} ({pokemon_of_day.id}) \n{pokemon_of_day.description}"
+                tweet = f"Le pokémon du jour est {pokemon_of_day.name} ({pokemon_of_day.id}) \n{pokemon_of_day.description} \n #pokemon #{pokemon_of_day.name}"
                 post_result = api.update_status(status=tweet, media_ids=[media.media_id])
                 clean(pokemon_of_day.id)
                 time.sleep(120)
